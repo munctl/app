@@ -1,0 +1,84 @@
+{
+	"expo": {
+		"name": "MUNctl",
+		"description": "A mobile app for managing MUN conferences.",
+		"version": "1.0.0",
+		"slug": "munctl",
+		"platforms": ["ios", "android", "web"],
+		"githubUrl": "https://github.com/munctl/app",
+		"orientation": "portrait",
+		"icon": "./assets/images/icons/IconV2_iOS_Default_1024x1024_2x.png",
+		"scheme": "munctl",
+		"userInterfaceStyle": "automatic",
+		"newArchEnabled": true,
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"appleTeamId": "4W2Q5VCH5P",
+			"bundleIdentifier": "app.munctl.ios",
+			"icon": {
+				"dark": "./assets/images/icons/IconV2-iOS-Dark-1024x1024@2x.png",
+				"light": "./assets/images/icons/IconV2_iOS_Default_1024x1024_2x.png",
+				"tinted": "./assets/images/icons/IconV2-iOS-TintedLight-1024x1024@2x.png"
+			},
+			"supportsTablet": true,
+			"infoPlist": {
+				"ITSAppUsesNonExemptEncryption": false
+			}
+		},
+		"android": {
+			"package": "app.munctl.android",
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/images/icons/AndroidForeground.png"
+			}
+		},
+		"web": {
+			"bundler": "metro",
+			"favicon": "./assets/images/favicon-256px.png"
+		},
+		"plugins": [
+			"expo-router",
+			[
+				"expo-splash-screen",
+				{
+					"image": "./assets/images/SquareText_1024wh.png",
+					"imageWidth": 200,
+					"resizeMode": "contain",
+					"backgroundColor": "#18181b"
+				}
+			],
+			"expo-font",
+			[
+				"@sentry/react-native/expo",
+				{
+					"url": "https://sentry.rgn.one/",
+					"project": "munctl",
+					"organization": "rgn"
+				}
+			],
+			[
+				"expo-sqlite",
+				{
+					"enableFTS": true
+				}
+			],
+			[
+				"expo-asset",
+				{
+					"assets": ["./assets/flags/w320/"]
+				}
+			],
+			"expo-secure-store",
+			"@react-native-community/datetimepicker",
+			"@sentry/react-native"
+		],
+		"experiments": {
+			"typedRoutes": true
+		},
+		"extra": {
+			"router": {},
+			"eas": {
+				"projectId": "3ff61ee6-baa0-43b3-ba52-93454a834fef"
+			}
+		}
+	}
+}

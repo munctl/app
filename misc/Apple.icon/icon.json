@@ -1,0 +1,38 @@
+{
+	"fill": {
+		"linear-gradient": [
+			"display-p3:0.87081,0.97188,1.00000,1.00000",
+			"display-p3:0.55625,0.81863,0.96611,1.00000"
+		]
+	},
+	"groups": [
+		{
+			"layers": [
+				{
+					"blend-mode": "normal",
+					"fill": "automatic",
+					"glass": true,
+					"hidden": false,
+					"image-name": "Square.png",
+					"name": "Square",
+					"position": {
+						"scale": 0.1,
+						"translation-in-points": [0, 0]
+					}
+				}
+			],
+			"shadow": {
+				"kind": "neutral",
+				"opacity": 0.5
+			},
+			"translucency": {
+				"enabled": true,
+				"value": 0.5
+			}
+		}
+	],
+	"supported-platforms": {
+		"circles": ["watchOS"],
+		"squares": "shared"
+	}
+}
