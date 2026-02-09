@@ -1,8 +1,29 @@
-import ct from "world-countries";
+import worldCountries from "world-countries";
 
-export const countries = ct.map((c) => ({
-	name: c.name.common,
-	code: c.cca2,
-	image:
-		"https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/624px-No-Image-Placeholder.svg.png",
-}));
+export interface CountryEntry {
+	code: string;
+	name: string;
+	flag: string;
+}
+
+const countries: CountryEntry[] = worldCountries
+	.map((c) => ({
+		code: c.cca2.toLowerCase(),
+		name: c.name.common,
+		flag: `https://flagcdn.com/w80/${c.cca2.toLowerCase()}.png`,
+	}))
+	.sort((a, b) => a.name.localeCompare(b.name));
+
+export default countries;
+
+export function searchCountries(
+	query: string,
+	excludeCodes: string[] = [],
+): CountryEntry[] {
+	const q = query.toLowerCase().trim();
+	return countries.filter(
+		(c) =>
+			!excludeCodes.includes(c.code) &&
+			(q === "" || c.name.toLowerCase().includes(q) || c.code.includes(q)),
+	);
+}

@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ca11a71-30f4-4c45-9c14-84a6e307647c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.husky/pre-commit" beforeDir="false" afterPath="$PROJECT_DIR$/.husky/pre-commit" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/MUNctl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MUNctl.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -28,7 +28,7 @@
     </selectedModels>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="8520" />
+    <option name="totalTimeSeconds" value="8907" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
   </component>
@@ -61,7 +61,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "expo",
+    "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/ryder/IdeaProjects/munctl",
@@ -120,7 +120,7 @@
       <workItem from="1769354786090" duration="1782000" />
       <workItem from="1769361677451" duration="1868000" />
       <workItem from="1769866078620" duration="597000" />
-      <workItem from="1770466313656" duration="314000" />
+      <workItem from="1770466313656" duration="994000" />
     </task>
     <servers />
   </component>
